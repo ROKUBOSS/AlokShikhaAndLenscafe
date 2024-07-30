@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICT (HSC)</title>
+<link rel="shortcut icon" href="ictfavicon.webp" type="image/x-icon">
+
+<style>
+  *{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  }
+  body{
+  background-image:url(bgtwo.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.collapsible {
+  background-color:transparent;
+  color: darkblue;
+  cursor: pointer;
+  margin: 1px;
+  padding: 18px;
+  width: 100%;
+  /* border: 1px solid gold; */
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: orange;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+h1{
+  color: gold;
+  border-bottom: 7px groove darkblue;
+}
+h3{
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 10px;
+  
+  
+
+}
+.hide{
+  display: none;
+}
+h3:hover .hide{
+  display: block;
+  padding-top: 5px;
+}
+button{
+padding: 10px;
+font-size: 18px;
+font-weight: 700;
+width: 50%;
+background-color: transparent;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- <center><h1>Today's Topic</h1></center> -->
+
+
+<button class="collapsible">Who are targeting students ?</button>
+<div class="content">
+  <br>
+  <input type="radio" name="student" id="">CSE & IT<br><br>
+  <input type="radio" name="student" id="">Any <br><br>
+</div>
+<button class="collapsible">Course Type ?</button>
+<div class="content">
+  <br>
+  <input type="radio" name="course" id="">Short<br><br>
+  <input type="radio" name="course" id="">Long <br><br>
+</div>
+<button class="collapsible">Courses</button>
+<div class="content">
+  <br>
+ <li>Web and Mobile App Development Using Java Spring Boot, Android & Flutter
+</li><br><br>
+ <li>Web Application Development Using JQuery, PhP and Laravel
+</li><br><br>
+ <li>Cross Platform App Development Using C#, ASP.NET and React
+
+ </li><br><br>
+</div>
+<button class="collapsible">Course-Duration</button>
+<div class="content">
+  <br>
+ <li>Months = 4</li><br><br>
+ <li>Total Hours = 144</li><br><br>
+</div>
+<button class="collapsible">Class Room / Online ?</button>
+<div class="content">
+  <br>
+  <input type="radio" name="room" id="">Classroom
+  <input type="radio" name="room" id="">Online (Live)
+  <input type="radio" name="room" id="">Online (Recorded)<br><br>
+</div> 
+<button class="collapsible">Marketing</button>
+<div class="content">
+  <br>
+ <li>Page promotion</li>
+ <li>Boosting</li>
+ <li>Search Engine Optimization</li>
+ <li>Physical-Marketing</li>
+ <li>Others</li><br><br>
+</div>
+<button class="collapsible">Instructor Cost ? </button>
+<div class="content">
+  <br>
+  <li>Monthly 60,000-70000 (Classroom)</li><br><br>
+  <li>Monthly 40,000-50000 (Online)</li><br><br>
+  
+</div>
+<button class="collapsible">License ?</button>
+<div class="content">
+  <br>
+  <li>Trade License</li><br><br>
+</div>
+<button class="collapsible">Starting Cost</button>
+<div class="content">
+  <br>
+  <h5>Devices</h5>
+  <li>PC = 30,000*20 = 6,00,000</li><br>
+  <li>Table = 4000*20 = 80,000</li><br>
+  <li>Chair = 1000*20 = 20000</li><br>
+  <li>AC    = 50,000*2 = 1,00,000</li><br>
+  <li>Projector = 50000</li><br>
+  <h5>Rent & Bills</h5>
+  <li>Room = 30000</li><br>
+  <li>Bills = 20000</li><br>
+  <h5>Marketing</h5>
+  <li>Ads Making = 10,000</li><br>
+  <li>Boost = 300 Dollars Monthly = 300*130 = 40,000</li><br>
+  <li>Physical Marketing = 30,000 (2 Persons)
+  </li><br>
+  <h5>Salary</h5>
+  <li>Teachers = 60,000*3 = 1,80,000  </li><br>
+  <li>Customer Care = 20000 </li><br>
+  <h5>License</h5>
+  <li>Trade = 10,000</li><br>
+  <li>Company Registration = 20,000
+  </li><br><br>
+  <button>Totals = 12,10,000</button><br>
+  <button>Backup = 40,000</button><br><br>
+  
+</div>
+<button class="collapsible">Monthly Cost</button>
+<div class="content">
+  <br>
+  <li>Room = 30,000</li><br>
+  <li>Electric Bills = 20,000</li>
+  <li>Customer Care = 20,000</li>
+  <li>Instructors = 1,80,000</li>
+  <li>Marketing = 70,000</li><br>
+  <button>Totals = 3,00,000</button><br><br>
+</div>
+<button class="collapsible">Benefits</button>
+<div class="content">
+  <br>
+  <li>Students</li><br>
+  <li>Teachers</li><br>
+  <li>Company (Alok Shikha)</li><br>
+  <li>Government</li><br><br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

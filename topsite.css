@@ -1,0 +1,29 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+table{
+    width: 100%;
+}
+table,th,td{
+border: 3px solid brown;
+background-color: aliceblue;
+color: darkblue;
+font-family: cursive;
+padding: 10px;
+font-size: larger;
+text-align: center;
+height: 120px;
+}
+
+
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+
