@@ -1,84 +1,163 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alok-Shikha & LensCafe Studio</title>
-<link rel="shortcut icon" href="newup.png" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok-Shikha & LensCafe Studio</title>
+    <link rel="shortcut icon" href="newup.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 
-<style>
-/* git push -u origin main */
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
 
-.menu {
-  float: left;
-  width: 20%;
-  text-align: justify;
-}
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
 
+        /* Container for header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #4CAF50, #00BCD4);
+            border-radius: 10px;
+        }
 
+        /* Menu section */
+        .menu {
+            float: left;
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            text-align: justify;
+            height: 100vh;
+            color: #fff;
+        }
 
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-}
+        .menu a {
+            display: block;
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: 0.3s ease-in-out;
+        }
 
-.right {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
+        .menu a:hover {
+            background-color: #4CAF50;
+            transform: scale(1.05);
+        }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
+        /* Main content */
+        .main {
+            float: left;
+            width: 60%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* iframe to display content dynamically */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .right {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        /* Responsive for small devices */
+        @media only screen and (max-width: 620px) {
+            .menu, .main, .right {
+                width: 100%;
+                float: none;
+                padding: 10px;
+                height: auto;
+            }
+
+            iframe {
+                height: 400px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        /* Smooth animations */
+        a {
+            transition: all 0.3s ease;
+        }
+
+    </style>
 </head>
 <body>
 
-<div style="padding:15px;text-align:center;">
-  <h1>Alok-Shikha & LensCafe Studio</h1>
-</div>
+    <div class="header">
+        <h1>Alok-Shikha & LensCafe Studio</h1>
+    </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <a href="update.html" target="_blank">Alok-Shikha</a> <br><br><br>
-    <a href="Services.html" target="_blank">Services & Cost</a> <br><br><br>
-    <a href="as.html" target="_blank">Alok-Shikha Details</a><br><br><br>
-    <a href="Sample.html" target="_blank">Professional-Course</a><br><br><br>
-    <a href="topCommonBusiness.html" target="_blank">Common-Business</a><br><br><br>
-    <a href="topCoommonadsFB.html" target="_blank">Common-Ads-FB</a><br><br><br>
-    <a href="topTargetingCustomers.html" target="_blank">Targeting-Customers</a><br><br><br>
-    <a href="LensCafe.html" target="_blank">LensCafe Studio</a><br><br><br>
-    <a href="topTasks.html" target="_blank">Recent-Tasks</a><br><br><br>
-    <a href="deviceusing.html" target="_blank">Devices Using Process</a><br><br><br>
-    <a href="videotype.html" target="_blank">Types Of Client</a><br><br><br>
-  </div>
+    <div style="overflow:auto">
+        <div class="menu">
+            <a href="update.html" target="content-frame">Alok-Shikha</a>
+            <a href="Services.html" target="content-frame">Services & Cost</a>
+            <a href="as.html" target="content-frame">Alok-Shikha Details</a>
+            <a href="Sample.html" target="content-frame">Professional Course</a>
+            <a href="topCommonBusiness.html" target="content-frame">Common Business</a>
+            <a href="topCoommonadsFB.html" target="content-frame">Common Ads FB</a>
+            <a href="topTargetingCustomers.html" target="content-frame">Targeting Customers</a>
+            <a href="LensCafe.html" target="content-frame">LensCafe Studio</a>
+            <a href="responsibility.html" target="content-frame">Partner's Responsibility</a>
+            <a href="deviceusing.html" target="content-frame">Devices Using Process</a>
+            <a href="videotype.html" target="content-frame">Types Of Client</a>
+        </div>
 
-  <div class="main">
-    
-  </div>
+        <div class="main">
+            <!-- Iframe that will display the content dynamically -->
+            <iframe src="" name="content-frame"></iframe>
+        </div>
 
-  <div class="right">
-   
-  </div>
-</div>
+        <div class="right">
+            <h3>Updates</h3>
+            <p>Check out our latest courses and offers.</p>
+        </div>
+    </div>
 
-<div style="text-align:center;padding:10px;margin-top:7px;">© Copyright Alok-Shikha.com</div>
+    <footer>
+        © Copyright Alok-Shikha.com 2024
+    </footer>
 
 </body>
 </html>
-
